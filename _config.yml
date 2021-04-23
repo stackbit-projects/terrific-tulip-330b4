@@ -1,0 +1,98 @@
+theme: jekyll-theme-chirpy
+baseurl: ''
+lang: en-US
+timezone: Asia/Shanghai
+title: Chirpy
+tagline: A text-focused Jekyll theme
+description: >-
+  A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web
+  design and focuses on text presentation.
+url: ''
+github:
+  username: github_username
+twitter:
+  username: twitter_username
+social:
+  name: your_full_name
+  email: example@doamin.com
+  links:
+    - 'https://twitter.com/username'
+    - 'https://github.com/username'
+google_site_verification: google_meta_tag_verification
+google_analytics:
+  id: ''
+  pv:
+    proxy_endpoint: null
+    cache_path: null
+theme_mode: null
+img_cdn: ''
+avatar: 'https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg'
+toc: true
+disqus:
+  comments: false
+  shortname: ''
+paginate: 10
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+collections:
+  tabs:
+    output: true
+    sort_by: order
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: '/posts/:title/'
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ''
+      type: tabs
+    values:
+      layout: page
+      permalink: '/:title/'
+      dynamic_title: true
+sass:
+  style: compressed
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs:
+      - development
+exclude:
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - '*.json'
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: '/tags/:name/'
+    category: '/categories/:name/'
